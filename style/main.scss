@@ -1,0 +1,39 @@
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+body {
+    margin: 0 auto;
+}
+@font-face {
+	font-family: "ProductSans";
+	src: url("fonts/ProductSans-Bold.woff") format("woff");
+}
+@mixin forcontentstyle{
+	border: 1px solid #cecece;
+	border-radius: 20px;
+	padding: 10px;
+	text-align: center;
+	display: flex;
+	width: 80%;
+	min-height: 100px;
+	margin-top: 50px;
+	align-items: center;
+}
+/*************************************/
+.wrapper {
+	min-height: 100vh;
+	display: flex;
+	width: 100%;
+	align-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+/*Content*/
+.content {
+	@include forcontentstyle();
+	font-family: 'ProductSans', Bold;
+	font-weight: 700;
+}
+
+
+
